@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./display.html">
+   <!--
+      Form
+         -An html form is used to collect users input.
+         - it is represented by <Frame> tag Containing different types of input element in it.
+         - Action Attribute helps the form to redirect the page to another,if submitted through
+          the button in the form.
+
+   -->
+          <style>
+                 #names{
+
+
+                 }
+
+        </style>
+
+        <label for="name">Fullname</label>
+        <!--
+              Label tag
+                   - a label tag is used to disclose a text in the form,reffering to the input field.
+                   -"For" key in ttributes is mapped with the input elements id to find the respective field to it.
+
+        -->
+       
+        <input type="text" id="name" placeholder="Fullname">
+        <!--
+          INPUT TAG
+               -Having an input field to store the users data.
+               -default input is of 'text' type.
+               -Attributes
+                   -required:Makes the input field mandatory.
+                   -disable:MAkes the input field inactive.
+                   -checked:makes the selected checkbox checked.
+                   -placeholder:helps the user to understand about an input field.
+
+                   Types:
+                      -Text(Default state)
+                      -number
+                      -date
+                      password
+                      -email
+                      -color
+                      -url
+                      -time
+                      -Datetime
+                      -radio
+                      -Buttons
+                           -Submit
+                           -Reset
+         -->   
+                           
+         <br><br>
+         <label for="num">PH-NUM</label>
+         <input type="number" id="num" placeholder="phone number">
+
+         <br><br>
+         <label for="date">Date of birth</label>
+         <input type="date" id="date" placeholder="Dare of birth">
+
+         <br><br>
+
+         <label for="pass">Password<span style="color: aliceblue; font-size: 15px;">*</span></label>
+         <input type="password" id="pass" placeholder="password">
+
+         <br><br>
+
+         <label for="email">Email</label>
+         <input type="email" id="email" placeholder="Emailid">
+
+         <br><br>
+         <label >Gender:</label>
+         <input type="radio" name="gender" id="male"  value="male">
+          <label for="male">male</label>
+          <input type="radio" name="gender" id="female" value="female">
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="other" value="other">
+          <label for="others">others</label>
+
+          <br><br>
+
+          <label for="lang">Language:</label>
+          <input type="checkbox" name="Language" id="Language" value="HTML">
+          <label for="HTML">HTML</label>
+          <input type="checkbox" name="Language" id="CSS" value="CSS">
+          <label for="CSS">CSS</label>
+          <input type="checkbox" name="Language" id="JS" VAlue="JS">
+          <label for="JS">JS</label>
+          <input type="checkbox" name="Language" id="Jv" value="Java">
+          <label for="Jv">Java</label>
+
+          <br><br>
+
+          <label for="count">Country</label>
+          <select  id="count">
+           <option selected disabled>Plz Select country</option>
+           <option value="india">INDIA</option>
+           <option value="Australia">Australia</option>
+           <option value="NEpal">NEPAL</option>
+           <option value="Egypt">EGYPT</option>
+           
+            </select>
+
+            <br> <br>
+           <button>Submit-btn</button>
+           <input type="submit" value="submit-inp">
+
+           <input type="reset" value="reset">
+
+ </form>
+    
+</body>
+</html>
